@@ -6,6 +6,7 @@ import helmet from "helmet";
 import morgan from "morgan";
 import authRoutes from "./routes/auth.routes";
 import errorHandler from "./middlewares/errorHandler";
+import { setupSwagger } from "./utils/swagger";
 
 dotenv.config();
 
@@ -14,7 +15,7 @@ app.use(express.json());
 app.use(cors());
 app.use(helmet());
 app.use(morgan("dev"));
-
+setupSwagger(app);
 app.use("/api/auth", authRoutes);
 app.use(errorHandler);
 app.listen(PORT, () => {
