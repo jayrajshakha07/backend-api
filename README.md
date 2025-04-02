@@ -12,6 +12,7 @@ This project is a scalable **Express.js** backend built with **TypeScript**, **P
 ✅ **Password hashing** with **bcrypt**.  
 ✅ **Security enhancements** using **helmet**.  
 ✅ **Request logging** using **morgan**.  
+✅ **Swagger API Documentation** available at **`/api-docs`**.  
 
 ---
 
@@ -52,7 +53,8 @@ npx prisma migrate dev
 ```sh
 npm run dev
 ```
-🚀 Your server should now be running on `http://localhost:5000`.
+🚀 Your server should now be running on `http://localhost:5000`.  
+📄 **Swagger API Documentation:** **`http://localhost:5000/api-docs`**  
 
 ---
 
@@ -66,6 +68,14 @@ npm run dev
  ┣ 📂 types          # TypeScript interfaces & types
  ┣ 📜 server.ts      # Entry point for the server
 ```
+
+---
+
+## 📌 API Documentation with Swagger  
+📄 The API is documented using **Swagger** and can be accessed at:  
+🔗 **[Swagger API Docs](http://localhost:5000/api-docs)**  
+
+To explore available endpoints and test API requests, open the Swagger UI in your browser.
 
 ---
 
@@ -93,9 +103,9 @@ npm start
 ## 📌 Troubleshooting
 ❓ **Error: Database connection failed** → Make sure PostgreSQL is running and the `DATABASE_URL` in `.env` is correct.  
 ❓ **Error: JWT_SECRET not found** → Make sure you created the `.env` file with `JWT_SECRET`.  
-❓ **Prisma migration issues** → Try running `npx prisma migrate reset` (WARNING: This deletes data!).
+❓ **Prisma migration issues** → Try running `npx prisma migrate reset` (WARNING: This deletes data!).  
 
 ---
 
-## 🎉 Happy Coding!
+## 🎉 Happy Coding! 🚀
 
