@@ -1,3 +1,4 @@
+
 datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
@@ -13,4 +14,16 @@ model User {
   name      String
   password  String
   createdAt DateTime @default(now())
+
+  todos     Todo[]   // One-to-Many relationship (User has many Todos)
+}
+
+model Todo {
+  id        String   @id @default(uuid())
+  title     String
+  completed Boolean  @default(false)
+  createdAt DateTime @default(now())
+
+  userId    String   
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade) 
 }
