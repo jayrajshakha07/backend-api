@@ -16,10 +16,6 @@
     "@types/morgan": "^1.9.9",
     "bcryptjs": "^3.0.2",
     "body-parser": "^2.2.0",
-<<<<<<< HEAD
-    "cluster": "^0.7.7",
-=======
->>>>>>> 197b562d7fd1aff9746ffc4d29703b6367c66f06
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "exceljs": "^4.4.0",
