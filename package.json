@@ -11,29 +11,44 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@prisma/client": "^6.5.0",
+    "@prisma/client": "^6.10.1",
     "@types/helmet": "^0.0.48",
     "@types/morgan": "^1.9.9",
     "bcryptjs": "^3.0.2",
+    "body-parser": "^2.2.0",
+    "cluster": "^0.7.7",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
+    "exceljs": "^4.4.0",
     "express": "^4.21.2",
+    "fast-csv": "^5.0.2",
+    "formidable": "^3.5.4",
     "helmet": "^8.1.0",
+    "iconv-lite": "^0.6.3",
     "jsonwebtoken": "^9.0.2",
+    "meilisearch": "^0.51.0",
     "morgan": "^1.10.0",
+    "multer": "^2.0.1",
+    "papaparse": "^5.5.3",
+    "pm2": "^6.0.8",
+    "prisma": "^6.10.1",
     "swagger-jsdoc": "^6.2.8",
-    "swagger-ui-express": "^5.0.1"
+    "swagger-ui-express": "^5.0.1",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.6",
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.1",
+    "@types/formidable": "^3.4.5",
     "@types/jsonwebtoken": "^9.0.9",
+    "@types/multer": "^1.4.13",
     "@types/node": "^22.13.14",
+    "@types/papaparse": "^5.3.16",
     "@types/swagger-jsdoc": "^6.0.4",
     "@types/swagger-ui-express": "^4.1.8",
     "nodemon": "^3.1.9",
     "ts-node": "^10.9.2",
-    "typescript": "^5.8.2"
+    "typescript": "^5.8.3"
   }
 }

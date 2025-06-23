@@ -7,10 +7,68 @@ generator client {
   provider = "prisma-client-js"
 }
 
-model User {
-  id        String  @id @default(uuid())
-  email     String  @unique
-  name      String
-  password  String
-  createdAt DateTime @default(now())
+
+
+
+model Lead {
+  id          Int      @id @default(autoincrement())
+  name        String  
+  firstName   String
+  lastName    String
+  title       String
+  company     String
+  city        String?
+  country     String
+  phone       String?
+  website     String?
+  email       String   @unique
+  revenue     String? 
+  employees   String? 
+  industry    String?
+  subIndustry String?
+  linkedinUrl String?
+  
+  createdAt   DateTime @default(now())
+
+  @@index([email])
+  @@index([country])
+  @@index([revenue])
+  @@index([employees])
+  @@index([industry])
+  @@index([subIndustry])
+  @@index([title])
+  @@index([name])
+  @@index([company])
+}
+
+
+model Backup {
+  id          Int      @id @default(autoincrement())
+  name        String  
+  firstName   String
+  lastName    String
+  title       String
+  company     String
+  city        String?
+  country     String
+  phone       String?
+  website     String?
+  email       String   @unique
+  revenue     String? 
+  employees   String? 
+  industry    String?
+  subIndustry String?
+  linkedinUrl String?
+  
+  createdAt   DateTime @default(now())
+
+  @@index([email])
+  @@index([country])
+  @@index([revenue])
+  @@index([employees])
+  @@index([industry])
+  @@index([subIndustry])
+  @@index([title])
+  @@index([name])
+  @@index([company])
 }
