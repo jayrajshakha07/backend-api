@@ -8,9 +8,6 @@ generator client {
   provider = "prisma-client-js"
 }
 
-<<<<<<< HEAD
-
-
 
 model Lead {
   id          Int      @id @default(autoincrement())
@@ -41,26 +38,6 @@ model Lead {
   @@index([title])
   @@index([name])
   @@index([company])
-=======
-model User {
-  id        String  @id @default(uuid())
-  email     String  @unique
-  name      String
-  password  String
-  createdAt DateTime @default(now())
-
-  todos     Todo[]   // One-to-Many relationship (User has many Todos)
-}
-
-model Todo {
-  id        String   @id @default(uuid())
-  title     String
-  completed Boolean  @default(false)
-  createdAt DateTime @default(now())
-
-  userId    String   
-  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade) 
->>>>>>> 197b562d7fd1aff9746ffc4d29703b6367c66f06
 }
 
 
